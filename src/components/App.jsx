@@ -11,7 +11,6 @@ import LatestRaceResultsInfo from "./LatestRaceResultsInfo";
 import DriverStandingsInfo from "../components/StandingsInfo";
 import LandingPage from "../components/LandingPage";
 import NavBar from "../components/NavBar";
-import About from "../components/About";
 
 const App = () => {
     return (
@@ -42,7 +41,6 @@ const App = () => {
                         />
                     }
                 />
-                <Route path="/about" element={<About />} />
             </Routes>
         </>
     );

@@ -19,7 +19,15 @@ const NavBar = () => {
                     <Link to="/standings">Standings</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <strong>
+                        <a
+                            href="https://www.formula1.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Latest News
+                        </a>
+                    </strong>
                 </li>
             </ul>
         </nav>
