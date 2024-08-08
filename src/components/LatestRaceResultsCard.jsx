@@ -49,43 +49,55 @@ const LatestRaceResultsCard = ({ results, race }) => {
 
     return (
         <li className="LatestRaceResultsCard">
-            <h1 className="ResultNumber">
-                {results.position || "No position info available"}
-            </h1>
-            <img
-                className="ResultsImg"
-                src={headshotUrl}
-                alt={driverNumber || "Driver Number"}
-                style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-            <p>
-                <strong>
-                    {results.Driver.givenName || "N/A"}{" "}
-                    {results.Driver.familyName || "N/A"}
-                </strong>
-            </p>
-            <p>
-                <strong>
-                    {formatConstructorId(results.Constructor.constructorId) ||
-                        "N/A"}
-                </strong>
-            </p>
-            <p>
-                Points: <strong>{results.points || "N/A"}</strong>
-            </p>
-            <p>
-                Number: <strong>{results.number || "N/A"}</strong>
-            </p>
-            <p>
-                Starting Position:
-                <strong>{results.grid || "N/A"}</strong>
-            </p>
-            <p>
-                Status: <strong>{results.status || "N/A"}</strong>
-            </p>
-            <p>
-                Laps Completed: <strong>{results.laps || "N/A"}</strong>
-            </p>
+            <div className="results-info">
+                <div className="Place">
+                    <h1 className="ResultNumber">
+                        {results.position || "No position info available"}
+                    </h1>
+                </div>
+                <p id="driver-name">
+                    <strong>
+                        {results.Driver.givenName || "N/A"}{" "}
+                        {results.Driver.familyName || "N/A"}
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        {formatConstructorId(
+                            results.Constructor.constructorId
+                        ) || "N/A"}
+                    </strong>
+                </p>
+                <p>
+                    Points: <strong>{results.points || "N/A"}</strong>
+                </p>
+                <p>
+                    Number: <strong>{results.number || "N/A"}</strong>
+                </p>
+                <p>
+                    Starting Position:
+                    <strong>{results.grid || "N/A"}</strong>
+                </p>
+                <p>
+                    Status: <strong>{results.status || "N/A"}</strong>
+                </p>
+                <p>
+                    Laps Completed: <strong>{results.laps || "N/A"}</strong>
+                </p>
+            </div>
+
+            <div className="driver-picture">
+                <img
+                    className="ResultsImg"
+                    src={headshotUrl}
+                    alt={driverNumber || "Driver Number"}
+                    style={{
+                        width: "100px",
+                        height: "100px",
+                        objectFit: "cover",
+                    }}
+                />
+            </div>
         </li>
     );
 };

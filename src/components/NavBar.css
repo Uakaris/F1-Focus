@@ -30,7 +30,6 @@ li {
 nav a {
     display: inline-block;
     text-decoration: none;
-    /* color: #a1a1a1; */
     color: hsl(0, 0%, 93%);
     font-weight: bold;
     transition: all 0.5s;
