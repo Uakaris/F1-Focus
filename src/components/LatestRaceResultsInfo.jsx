@@ -5,6 +5,7 @@ import LatestRaceResultsList from "./LatestRaceResultsList";
 
 const LatestRaceResultsInfo = () => {
     const [results, setResults] = useState([]);
+    const [race, setRace] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -13,6 +14,7 @@ const LatestRaceResultsInfo = () => {
             try {
                 const data = await apiService.getLatestRaceResults();
                 setResults(data.resultsData || []);
+                setRace(data.raceData || []);
             } catch (error) {
                 setError(error.message);
             } finally {
@@ -42,7 +44,7 @@ const LatestRaceResultsInfo = () => {
     return (
         <main className="results">
             <h1 className="ResultsHeading">Latest Race Results</h1>
-            <LatestRaceResultsList results={results} />
+            <LatestRaceResultsList results={results} race={race} />
         </main>
     );
 };

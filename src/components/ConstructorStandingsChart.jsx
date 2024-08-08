@@ -73,7 +73,7 @@ const ConstructorStandingsChart = ({ constructorStandings }) => {
                 data={chartData}
                 options={{
                     maintainAspectRatio: false,
-                    
+
                     plugins: {
                         legend: {
                             position: "top",

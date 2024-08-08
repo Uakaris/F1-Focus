@@ -15,7 +15,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
     gap: 42px;
     height: calc(100vh - 91px);
 }
@@ -47,7 +46,6 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-    /* padding-bottom: 30px; */
 }
 
 .BackButton {
@@ -75,7 +73,6 @@ body {
     text-shadow: 1px 1px 10px #04d9ff;
     cursor: pointer;
 }
-    
 
 .ChartsParent {
     padding-top: 20px;
@@ -87,4 +84,3 @@ canvas {
     height: calc(75vh);
     cursor: crosshair;
 }
-

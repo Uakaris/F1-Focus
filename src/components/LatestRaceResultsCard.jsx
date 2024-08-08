@@ -27,7 +27,7 @@ const getHeadshotForNumber = (number) => {
     return headshots[number];
 };
 
-const LatestRaceResultsCard = ({ results }) => {
+const LatestRaceResultsCard = ({ results, race }) => {
     const formatConstructorId = (id) => {
         if (!id) return "N/A";
 
