@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    background-image: url("src/assets/landingPageImg.jpg");
+    background-image: url("/assets/landingPageImg.jpg");
     background-position: cover;
     background-size: cover;
     height: calc(100vh - 91px);
