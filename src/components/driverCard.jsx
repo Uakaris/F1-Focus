@@ -9,7 +9,7 @@ const DriverCard = ({ driver }) => {
                 alt={driver.full_name || "Driver"}
             />
             <p>
-                Number: <strong>{driver.driver_number || "N/A"}</strong> 
+                Number: <strong>{driver.driver_number || "N/A"}</strong>
             </p>
             <p>
                 Team: <strong>{driver.team_name || "N/A"}</strong>
