@@ -1,0 +1,20 @@
+.LoadingContainer,
+.ErrorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fa-spinner,
+.fa-triangle-exclamation {
+    font-size: 100px;
+    color: #04d9ff;
+}
+
+.drivers {
+    overflow: scroll;
+}
+body {
+    overflow: scroll;
+}
