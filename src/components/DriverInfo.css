@@ -13,8 +13,8 @@
 }
 
 .drivers {
-    overflow: scroll;
+    overflow: auto;
 }
 body {
-    overflow: scroll;
+    overflow: auto;
 }

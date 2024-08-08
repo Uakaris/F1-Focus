@@ -11,6 +11,10 @@ const getAllDriversData = async () => {
     }
 };
 
+// getAllDriversData().then((driversData) => {
+//     console.log(driversData);
+// });
+
 // TODO: Complete this functionality
 
 // const getLapData = async () => {
@@ -89,9 +93,9 @@ const getLatestRaceResults = async () => {
     }
 };
 
-getLatestRaceResults().then((latestRaceResults) => {
-    console.log(latestRaceResults);
-});
+// getLatestRaceResults().then((latestRaceResults) => {
+//     console.log(latestRaceResults);
+// });
 
 export {
     getAllDriversData,
