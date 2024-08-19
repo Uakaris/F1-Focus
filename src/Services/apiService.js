@@ -58,7 +58,7 @@ const getDriverStandings = async () => {
 
 const getConstructorStandings = async () => {
     const BASE_URL =
-        "http://ergast.com/api/f1/current/constructorStandings.json";
+        "https://ergast.com/api/f1/current/constructorStandings.json";
 
     try {
         const response = await fetch(BASE_URL);
@@ -79,7 +79,7 @@ const getConstructorStandings = async () => {
 // });
 
 const getLatestRaceResults = async () => {
-    const BASE_URL = "http://ergast.com/api/f1/current/last/results.json";
+    const BASE_URL = "https://ergast.com/api/f1/current/last/results.json";
     try {
         const response = await fetch(BASE_URL);
         const data = await response.json();
