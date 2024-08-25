@@ -75,8 +75,7 @@ const LatestRaceResultsCard = ({ results, race }) => {
                     Number: <strong>{results.number || "N/A"}</strong>
                 </p>
                 <p>
-                    Starting Position:
-                    <strong>{results.grid || "N/A"}</strong>
+                    Starting Position: <strong>{results.grid || "N/A"}</strong>
                 </p>
                 <p>
                     Status: <strong>{results.status || "N/A"}</strong>
